@@ -1,0 +1,261 @@
+* { 
+	padding:0; 
+	margin:0; 
+}
+body{
+	margin:0;
+	padding:0;
+	font-size: 16px;
+	background-color: #f2f2f2;
+	color: #555;
+	font-family: "Lato";
+}
+.clear{
+	clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
+}
+
+/** 链接 **/
+a {
+	color: #f85c37;
+	word-wrap: break-word;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:hover,
+a:focus {
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}
+a:before,
+a:after {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+    border-color: #ccc;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 1px;
+    padding: 0;
+    width: 90%;
+    margin: 20px 5%;
+}
+/*导航条*/
+.header{
+	min-width: 760px;width: expression(document.body.clientWidth < 760? "760px": "100%" )/*最小宽度设置*/;width:100%;
+	height:60px;
+	background-color:#111;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	overflow: visible;
+	line-height: 0;
+	text-align: center;
+	-webkit-transition: all .5s;
+	-moz-transition:all .5s;
+	transition: all 1s;
+}
+.nav li.active a, .nav li a:hover {
+	color:#FFF;
+	background-color:rgb(128,78,33);
+}
+.header ul.nav {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #222;
+	zoom:1;
+	*display: inline;
+}
+.header ul.nav > li {
+	display: block;
+	float: left;
+	padding: 0;
+}
+.header ul.nav a {
+	display: block;
+	font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	padding: 14px 20px ;
+	border-left: 1px solid #222;
+	-webkit-transition: all .5s;
+	-moz-transition:all .5s;
+	transition: all 1s;
+}
+.header ul.nav a:hover {
+	background: #222;
+	text-decoration: none;
+	border-left: 1px solid #111;
+}
+.header ul.nav .active a {
+	background: #44bbaa;
+	border-left: 1px solid #111;
+}
+.header ul.nav .active a:hover {
+	background: #44bbaa;
+}
+.header i {
+	font-size: 25px;
+}
+.header ul.nav img{
+	height: 25px;
+}
+.header ul.nav .active a {
+	background: #44bbaa;
+	border-left: 1px solid #111;
+}
+.header ul.nav .active a:hover {
+	background: #44bbaa;
+}
+.big-header{
+	height:77px;
+	-webkit-transition: all .5s;
+	-moz-transition:all .5s;
+	transition: all 1s;
+}
+.big-header ul.nav img{
+	height: 30px;
+}
+.big-header ul.nav a{
+	padding: 20px 30px ;
+	-webkit-transition: all .5s;
+	-moz-transition:all .5s;
+	transition: all 1s;
+} 
+/* 导航条结束 */
+
+/*标语*/
+.banner{
+	width: 100%;
+	min-height: 500px;
+	background: url(../img/banner.jpg) no-repeat center top;
+	padding-top:160px;
+	text-align:center;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.banner h1 {
+	padding-top:60px;
+	font-size: 80px;
+	color: white;
+}
+.banner h3 {
+	font-size: 20px;
+	color: white;
+}
+/*end of banner*/
+.title{
+	margin-left: 5%;
+	float: left;
+	width: 18%;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.content{
+	float: left;
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.add{
+	float: left;
+	width: 18%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/*about*/
+#intro{
+	background: #2c3e50;
+	padding-top: 60px;
+	padding-bottom: 160px;
+	color: white;
+}
+#intro h4, p {
+	color: white;
+}
+/*resume*/
+.education{
+	color: #2f2f2f;
+	padding-top: 60px;
+}
+.education p, h4{
+	color: #95a5a6;;
+}
+.education > .content span{
+	color: #34495e;
+	font-weight: 700;
+}
+.education > .add span{
+	padding: 6px;
+	color: white;
+	background: #34495e;
+}
+.education span a{
+	text-decoration: none;
+	color: #fff;
+}
+.skillswrap{
+	background: #2c3e50;
+	height: 330px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: white;
+}
+.skillswrap h4, p {
+	color: white;
+}
+.centered {
+    text-align: center;
+}
+
+/*页脚*/
+.footer{
+	height: 300px;
+	background: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.footer h4,p{
+	color: white;
+}
+.footer span {
+	font-weight: 700;
+}
+.footer i {
+	padding-right: 8px;
+	color: #1abc9c;
+}
+.footer>.add span{
+	font-size: 12px;
+}
+.footer img{
+	width: 30px;
+	height: 30px;
+}
