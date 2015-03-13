@@ -192,7 +192,7 @@ hr {
 }
 /*about*/
 #intro{
-	background: #2c3e50;
+	background: #0A2A30;
 	padding-top: 60px;
 	padding-bottom: 160px;
 	color: white;
@@ -215,14 +215,14 @@ hr {
 .education > .add span{
 	padding: 6px;
 	color: white;
-	background: #34495e;
+	background: #0A2A30;
 }
 .education span a{
 	text-decoration: none;
 	color: #fff;
 }
 .skillswrap{
-	background: #2c3e50;
+	background: #0A2A30;
 	height: 330px;
 	padding-top: 60px;
 	padding-bottom: 60px;
